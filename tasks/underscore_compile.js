@@ -45,14 +45,15 @@ module.exports = function(grunt) {
         
         if (filename.indexOf('.html') > -1) {
 
-          return 'JST[\''+filename+'\']="'+ grunt.file.read(filepath).replace(lineBreak,'').replace(/"/g,'\"') + '";';
+          return ('JST[\''+filename+'\']="'+ grunt.file.read(filepath).replace(lineBreak,'').replace(/"/g,'\\"') + '";');
 
         }
 
       }).join(grunt.util.normalizelf(options.separator));
 
       // Handle options.
-      src = src.replace(new RegExp("\>[\n\t ]+\<", "g"), "><");
+      //[A-Za-z0-9_]
+      src = src.replace(new RegExp("\>[\n\t ]+\<", "g"), "><").replace(/\>[\t ]+/g, '>').replace(/[\t ]+\</g, '<');
       src = 'define(function(){ var JST={};'+src+' return JST;});';
 
       // Write the destination file.
