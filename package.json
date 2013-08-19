@@ -1,7 +1,7 @@
 {
   "name": "grunt-underscore-compile",
   "description": "Compile external underscore templates into an AMD module",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://github.com/duckbox/grunt-underscore-compile",
   "author": {
     "name": "Chris Grant",

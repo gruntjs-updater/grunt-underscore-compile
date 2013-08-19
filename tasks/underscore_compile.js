@@ -52,7 +52,7 @@ module.exports = function(grunt) {
       }).join(grunt.util.normalizelf(options.separator));
 
       // Handle options.
-
+      src = src.replace(new RegExp("\>[\n\t ]+\<", "g"), "><");
       src = 'define(function(){ var JST={};'+src+'});return JST;});';
 
       // Write the destination file.
