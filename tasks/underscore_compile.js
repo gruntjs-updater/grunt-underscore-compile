@@ -42,8 +42,12 @@ module.exports = function(grunt) {
         } else {
           filename = filepath;
         }
+        
+        if (filename.indexOf('.html') > -1) {
 
-        return 'JST[\''+filename+'\']="'+ grunt.file.read(filepath).replace(lineBreak,'').replace(/"/g,'\"') + '";';
+          return 'JST[\''+filename+'\']="'+ grunt.file.read(filepath).replace(lineBreak,'').replace(/"/g,'\"') + '";';
+
+        }
 
       }).join(grunt.util.normalizelf(options.separator));
 

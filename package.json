@@ -1,8 +1,8 @@
 {
   "name": "grunt-underscore-compile",
-  "description": "Compile external underscore templates into AMD module",
+  "description": "Compile external underscore templates into an AMD module",
   "version": "0.1.0",
-  "homepage": "https://github.com/chris/grunt-underscore-compile",
+  "homepage": "https://github.com/duckbox/grunt-underscore-compile",
   "author": {
     "name": "Chris Grant",
     "email": "duckbox38@gmail.com",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/chris/grunt-underscore-compile.git"
+    "url": "git://github.com/duckbox/grunt-underscore-compile.git"
   },
   "bugs": {
-    "url": "https://github.com/chris/grunt-underscore-compile/issues"
+    "url": "https://github.com/duckbox/grunt-underscore-compile/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/chris/grunt-underscore-compile/blob/master/LICENSE-MIT"
+      "url": "https://github.com/duckbox/grunt-underscore-compile/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
